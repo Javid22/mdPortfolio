@@ -1,0 +1,423 @@
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  max-width: 100%;
+}
+
+.loading {
+  background: white;
+  text-align: center;
+  padding: 20%;
+}
+.loadk {
+  color: black;
+  margin: 0;
+  font: .8em verdana;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+#myDiv {
+  display: none;
+}
+
+/*
+ * Loading Dots
+ * Can we use pseudo elements here instead :after?
+ */
+.loading span {
+  display: inline-block;
+  vertical-align: middle;
+  width: .6em;
+  height: .6em;
+  margin: .19em;
+  background: #007DB6;
+  border-radius: .6em;
+  animation: loading 1s infinite alternate;
+}
+
+/*
+ * Dots Colors
+ * Smarter targeting vs nth-of-type?
+ */
+.loading span:nth-of-type(2) {
+  background: #008FB2;
+  animation-delay: 0.2s;
+}
+.loading span:nth-of-type(3) {
+  background: #009B9E;
+  animation-delay: 0.4s;
+}
+.loading span:nth-of-type(4) {
+  background: #00A77D;
+  animation-delay: 0.6s;
+}
+.loading span:nth-of-type(5) {
+  background: #00B247;
+  animation-delay: 0.8s;
+}
+.loading span:nth-of-type(6) {
+  background: #5AB027;
+  animation-delay: 1.0s;
+}
+.loading span:nth-of-type(7) {
+  background: #A0B61E;
+  animation-delay: 1.2s;
+}
+
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ 
+.header button{
+    margin-top: -100%;
+}
+
+#resm{
+  margin-top: -140px;
+}
+/*---------------resume--------*/
+.font{
+    font-size: 1em;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.font li{
+    margin-top: 10px;
+}
+.resume{
+    margin-left: 10px;
+}
+
+.education{
+  margin-top: 0px;
+}
+.year{
+    background-color:rgba(10,143,202,1);
+    color: white;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.hr{
+    border-top: 2px solid blue;
+}
+
+.footer{
+  margin: 0px -90px -40px -90px;
+}
+/*---------------interest--------*/
+
+.interest img{
+    width: 120px;
+    height: 127px;
+    border-radius: 100px;
+    will-change: transform;
+    transition: transform 450ms;
+}
+.interest h5{
+   margin-left: -27px;
+}
+.interest img:hover{
+    transition: transform 125ms;
+    transform: translateY(-20px);
+}
+
+.header h1{
+    margin: -430px 0px 250px 385px;
+    word-spacing: 2px;
+}
+.header h5{
+    margin: -252px 0px 250px 385px;
+    word-spacing: 2px;
+}
+
+.mg-tp-30 {
+  margin-top: 30px;
+}
+
+#jumbotron:hover {
+   background: #bd00b6;
+}
+
+.header-slider: hover {
+  color: white;
+}
+
+.clr-white {
+  color: white !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+#jumbotron{
+    border-radius: 40px;
+    background: white;
+    padding: 20px;
+    min-height:250px;
+    border-top: ridge;
+    box-shadow: 5px 10px 10px #888888;
+    transition: background-color 1s ease-out 100ms
+}
+#jumbotron img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+#jumbotron h2{
+  color: #a256b8;
+  text-align: center;
+}
+h2{
+  color: blue;
+  border-color: #a256b8;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+#skills {
+    background-color: #f5f8fd;
+    width: 100%;
+}
+#contact{
+    background-color: #f5f8fd;
+    width: 100%;
+}
+
+.progress{
+    height: 10px;
+}
+
+.form-group h4{
+    font-weight: bolder;
+}
+
+.proj {
+  border: solid;
+  border-color: #a256b8;
+  background-color: white;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+.butt{
+  margin-left: 25%;
+}
+.butt1{
+  color: #a256b8;
+  font-weight: bolder;
+  border-radius: 10px;
+  border-color: #a256b8;
+  background-color: white;
+  padding: 8px 20px 8px 20px;
+}
+.butt input:hover{
+  color: white;
+  background-color: #a256b8;
+}
+.butt2{
+  font-weight: bolder;
+  background-color: #a256b8;
+  border-radius: 10px;
+  border-color: #a256b8;
+  padding: 8px 20px 8px 20px;
+}
+.butt2 :hover{
+  background-color: white;
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+} 
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+.text-gray {
+  color: #aaa;
+}
+.nav-link{
+    text-transform: capitalize;
+}
+.nav-link:hover{
+    background:#f3f2f2;
+}
+.text-primary{
+    color:#7579e7 !important;
+}
+
+.work{
+  margin-left: 100px;
+}
+@media (max-width: 768px) {
+.header h1{
+    margin: -177px 0px 250px 50px;
+    font-size: 25px;
+    word-spacing: 0px;
+    position: absolute; 
+}
+.header h5{
+    margin: -140px 0px 250px 50px;
+    word-spacing: 0px;
+    font-size: 12px;
+    position: absolute; 
+}
+
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+  .work{
+  margin-left: 120px;
+  margin-top: -50px;
+}
+.font{
+  margin-left: -18px;
+}
+#resm{
+  margin-top: -80px;
+}
+.footer{
+  margin: 0px 0px  0px 0px;
+}
+}
+
+@media only screen and (max-width: 600px)  
+{ 
+ 
+  .hidden  
+    { 
+      display: none;
+    } 
+} 
+
+
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #a356b9;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.accordion:hover {
+  background-color: #8b52b5;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+#dev{
+  width: 100px;
+}
+
+
+//contact desing
+form {
+  background-color: #ffb3b3;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact input{
+  border: 2px solid #b913b8;
+}
+
+#contact textarea{
+  border: 2px solid #b913b8;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  width: 100%;
+}
+input[type="submit"] {
+  color: white;
+  padding: 10px 20px;
+  border: none !important;
+  border-radius: 5px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #ff1a1a;
+}
+  
+.feedbackSubmit {
+    background-color: #28a745;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}

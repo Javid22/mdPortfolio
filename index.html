@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javid Portfolio</title>
+    <link rel = "icon" href = "images/ogo.png" type = "image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+</head>
+<body onload="myFunction()" style="margin:0;">
+  <div class="loading" id="loading">
+    <h5 class="loadk">Loading Please Wait ..</h2>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+<div id="myDiv">
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white navbar-collapse" id="sidebar">
+  <div class="py-4 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center">
+      <img loading="lazy" src="images/mdj.jpeg" alt="..." width="80" height="80" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body">
+        <h4 class="m-0">Javid</h4>
+        <p class="font-weight-normal text-muted mb-0">Software developer</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Dashboard</p>
+
+  <ul class="nav flex-column bg-white mb-0" >
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark bg-light" >
+          <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+          home
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#projects" class="nav-link scrollto text-dark">
+          <i class="fa fa-archive mr-3 scrollto text-primary fa-fw"></i>
+          Projects
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#wrkexp" class="nav-link text-dark">
+          <i class="fa fa-keyboard-o mr-3 text-primary fa-fw"></i>
+          work experience
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#skills" class="nav-link text-dark">
+          <i class="fa fa-lightbulb-o mr-3 text-primary fa-fw"></i>
+          skills
+      </a>
+    </li>
+    <li class="nav-item">
+      <a onclick='window.open("./images/Resumemern.pdf");return false;' class="nav-link text-dark">
+          <i class="fa fa-cc mr-3 text-primary fa-fw"></i>
+          resume
+      </a>
+    </li>
+  </ul>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Connect Me On</p>
+
+  <ul class="nav flex-column bg-white mb-0">  
+    <li class="nav-item">
+      <a href="https://www.linkedin.com/in/mohammed-javid-5322221ab" class="nav-link text-dark">
+                <i class="fab fa-linkedin-square  mr-3 text-primary fa-fw"></i>
+                linked in
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="https://github.com/Javid22/" class="nav-link text-dark">
+                <i class="fab fa-github mr-3 text-primary fa-fw" aria-hidden="true"></i>
+                github
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="https://mail.google.com/mail/mu/mp/371/#tl/priority/%5Esmartlabel_personal" class="nav-link text-dark">
+                <i class="fab fa-google-plus-official mr-3 text-primary fa-fw"></i>
+                gmail
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark">
+                <i class="fab fa-facebook mr-3 text-primary fa-fw"></i>
+                facebook
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="https://www.instagram.com/_javid_md_/" class="nav-link text-dark">
+                <i class="fab fa-instagram mr-3 text-primary fa-fw"></i>
+                instagram
+            </a>
+    </li>
+  </ul>
+</div>
+<!-- End vertical navbar -->
+
+
+<!-- Page content holder -->
+
+<div class="page-content" id="content">
+ 
+  <!-- Toggle button -->
+  <div class="header heading-conent">
+    <img src="images/back2.jpg" class="img-fluid">
+    <button id="sidebarCollapse" type="button" class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4 ml-5"><i class="fa fa-bars mr-2"></i></button>
+    <h1 class="text-white">Hey! I am Javid</h1>
+    <h5 id="text" class="text-white">.......</h5>
+  </div>
+<!---------------image start-------->
+<div class="container">
+  <div class="row pt-4">
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="jumbotron slider-ho-1" id="jumbotron">
+        <img src="images/develop.png" class="center img-fluid slider-img-1 mg-tp-30">
+        <h2 class="header-slider-1">Developer</h2>
+        <p  style="margin-bottom: -5px;" class="slider-p-1 hide">Engineering is not just a label, it is a continuous process. I have been constantly improving my skills and I am still working on becoming a better software engineer.</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12" >
+      <div class="jumbotron slider-ho-2" id="jumbotron">
+        <img src="images/designer.jpg" class="center img-fluid slider-img-2 mg-tp-30">
+        <h2 class="header-slider-2">Designer</h2>
+        <p class="mg-bt-10 slider-p-2 hide">I have a keen interest in the design process. Design is an art that can help improve our lives when done to perfection.</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12">
+      <div class="jumbotron slider-ho-3" id="jumbotron">
+        <img src="images/learn.jpeg" class="center img-fluid slider-img-3 mg-tp-30">
+        <h2 class="mt-3 header-slider-3">Learner</h2>
+        <p style="margin-bottom: 25px;" class="slider-p-3 hide">I have the ability to learn quickly. Learning provides valuable knowledge that can help us achieve success in life.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="projects" class="projects col-12">
+<h2 >Projects</h2>
+<button class="accordion text-white active font-weight-bold">Ticket Registration Using API</button>
+<div class="panel text-justify" style="display: block;">
+  <ul class="mt-2">
+    <li>The web application allows users to sign up and log in with their email address and password.</li>
+    <li>User data is securely stored in a database for future use.</li>
+    <li>Users can fill out a form with their ticket and customer details to book their railway tickets.</li>
+    <li>Ticket details are sent to a RESTful API to create a new ticket entry.</li>
+    <li>Upon successful registration, users can view the ticket details including the ticket ID, subject, and other relevant information.</li>
+    <li>The application improves the user experience by allowing them to easily book their railway tickets and keep track of their reservations.</li>
+  </ul>
+<div class="butt mb-4">
+<a href="https://github.com/Javid22/Ticket-registration-form.git"><input type="button" value="Git Link" class="butt1"/></a>
+<a href="https://drive.google.com/file/d/19Ms-mTP6B63tkJBGAEBwri4x6YcxMZhm/view"><input type="button" value="Demo" class="butt2 text-white"/></a>
+</div>
+</div>
+
+<button class="accordion text-white font-weight-bold">Shopping Cart</button>
+<div class="panel text-justify">
+  <ul class="mt-2">
+    <li>The online shopping cart application allows users to sign up and log in using their email address and password. Their personal information is securely stored in a database for future purchases.</li>
+    <li>Users can browse through various products and add them to their shopping cart. They can then proceed to checkout their selected products.</li>
+    <li>On the confirmation page, users can add, remove, or edit the products in their cart before making the final purchase.</li>
+    <li>During checkout, users are required to enter their shipping and billing addresses, as well as payment details for the transaction to be completed.</li>
+    <li>All the details of the customers, including their shipping and billing information, are stored securely in the database for future reference.</li>
+  </ul>
+</div>
+
+<button class="accordion text-white font-weight-bold">Question Paper Creation</button>
+<div class="panel text-justify">
+  <ul class="mt-2">
+    <li>The web application allows users to sign up and log in using their email address and password, with their personal information securely stored in a database.</li>
+    <li>Users can easily create question papers by entering the title, question marks, and individual questions. The entered questions are then stored in the database and can be retrieved for later use.</li>
+    <li>The web application automatically generates the question paper pattern based on the entered questions, allowing users to quickly create printable or downloadable question papers.</li>
+    <li>This streamlined process can help save time for teachers and other educators, making it easier to create and distribute high-quality question papers.</li>
+  </ul>
+</div>
+<button class="accordion text-white font-weight-bold">Poster and Article Design</button>
+<div class="panel text-justify">
+  <li>I had the opportunity to design and create posters and banners to promote the symposium hosted by our college.</li>
+  <li>In addition, I wrote an article to promote the event to the broader community.</li>
+  <li>Through this experience, I gained valuable knowledge and skills in design and communication that will benefit me in future projects and endeavors.</li>
+</ul>
+</div>
+<!---------------workexp end-------->
+<h2 id="wrkexp" >Work Experience</h2>
+  <div class="row ">
+    <div class="col-lg-3 col-md-2 col-xs-1 mt-5">
+      <img src="images/creditmantri.jpeg" class=" work img-fluid" id="dev" style="border-radius: 60px;">
+    </div>
+    <div class="col-lg-8 col-md-8 col-xs-6 ">
+     <div class="proj jumbotron mt-4" >
+      <h5 class="text-primary font-weight-bold">Full Stack Developer</h5>
+      <ul class="font mt-4 text-secondary text-justify">
+            <li>Develop and maintain back end solutions</li>
+            <li>Responsible for developing and implementing both the front-end and back-end of web applications, a full-stack developer plays a crucial role in ensuring seamless functionality and optimal user experience.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-xs-4  mt-5">
+      <img src="images/novanet.png" class=" work img-fluid" id="dev" style="border-radius: 60px;">
+    </div>
+    <div class="col-lg-8 col-md-6 col-xs-12 ">
+     <div class="proj jumbotron mt-4" >
+      <h5 class="text-primary font-weight-bold">PHP Developer Intern</h5>
+      <ul class="font mt-4 text-secondary text-justify">
+            <li>Developed a platform for e-commerce digital distribution</li>
+            <li>Assist in the development of e-commerce site using front-end and RESTful APIs</li>
+        </ul>
+      </div>
+    </div>
+
+   </div>
+
+<!---------------workexp end-------->
+<!---------------skills end-------->
+<div id="skills" class="offset container mt-5 pb-5">
+    <h2>Professional Skills</h2>
+    <div class=ml-4>
+    <div class="row  mt-2">
+    <div class="col-lg-6 col-md-6 col-12">
+      <h5>HTML</h5>
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+        </div>
+      </div>
+      <h5>CSS</h5>
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:85%;">
+        </div>
+      </div>
+      <h5>BOOTSTRAP</h5>
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:75%;">
+        </div>
+      </div>
+      <h5>React.Js</h5>
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:75%;">
+        </div>
+      </div>
+      <h5>PHOTOSHOP</h5>
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-12">
+      <h5>PHP</h5>
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+        </div>
+      </div>
+      <h5>NODE.JS</h5>
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+        </div>
+      </div>
+      <h5>MySql</h5>
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+        </div>
+      </div>
+      <h5>JavaScript</h5>
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:95%;">
+        </div>
+      </div>
+      <h5>MongoDB</h5>
+      <div class="progress mb-3">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40"
+        aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+        </div>
+      </div>
+    </div>
+   </div>   
+ </div>
+</div>   
+<!---------------skills end-------->
+<!---------------Interest start-------->
+<!--  <div id="interest" class="offset container mt-3 pb-2 hidden">
+    <h2 >INTEREST</h2>
+   </div>
+   <div class="row hidden">
+     <div class="col-lg-2 col-md-6 col-xs-6 col-6 pb-5">
+      <div class="interest border-primary">
+      <img src="images/dev.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">DEVELOPMENT</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-6 col-xs-6 col-6 pb-5">
+      <div class="interest  border-primary">
+      <img src="images/designer.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">DESIGN</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-6 col-xs-6 col-6 pb-5">
+      <div class="interest  border-primary">
+      <img src="images/learning.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">LEARNING</h5>
+        </div>
+      </div>
+    </div>
+
+   <div class="col-lg-2 col-md-6 col-xs-6 col-6 pb-5">
+      <div class="interest  border-primary">
+      <img src="images/photoshop.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">EDITING</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-2 col-md-6 col-xs-6 col-6 pb-5">
+      <div class="interest  border-primary">
+      <img src="images/gym.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">FITNESS</h5>
+        </div>
+      </div>
+    </div>
+
+   <div class="col-lg-2 col-md-6 col-xs-6 col-6 pb-5">
+      <div class="interest  border-primary">
+      <img src="images/decoration.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title text-center">DECORATION</h5>
+        </div>
+      </div>
+    </div>
+   </div>
+ </div> -->
+<!---------------Interest end-------->
+<!---------------Contract Start-------->
+<div id="contact" class="offset container  pb-5">
+ <form method="post" action="">
+      <h2>Feedback</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <br>
+      <div class="text-center">
+        <input type="submit" class="btn btn-success btn-sm text-right" value="Submit">
+      </div>
+  </form>
+</div>
+<div>
+  <p class="feedbackSubmit hide"> Thank You For Submitting Your Feedback</p>
+  </div>
+<!---------------Contract end-------->
+ </div>
+
+
+<!---------------footer start-------->
+<footer class="text-center text-white" style="background-color: #a356b9;">
+  <!-- Grid container -->
+  <div class="container p-2 pt-0 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/_javid_md_/" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/mohammed-javid-5322221ab" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Javid22/" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Feel free to send an e-mail on    <a class="text-white" href="">javidshakira@gmail.com</a>
+  </div>
+  <!-- Copyright -->
+</div>
+</footer>
+<!---------------footer end-------->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="main.js"></script>
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loading").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+$(function() { 
+  $('#sidebarCollapse').on('click', function() {
+    $('#sidebar, #content').toggleClass('active');
+  });
+   $(".nav-link").on('click', function() {
+    if(window.outerWidth < 425) {
+      $('#sidebar, #content').removeClass('active');
+    }
+  });
+
+  $(".slider-ho-1").mouseover(function(){
+      $('.slider-img-1').addClass("hide");
+      $('.header-slider-1').addClass('clr-white');
+      $('.slider-p-1').removeClass("hide");
+  });
+
+  $(".slider-ho-1").mouseleave(function(){
+      $('.slider-img-1').removeClass("hide");
+      $('.header-slider-1').removeClass('clr-white');
+      $('.slider-p-1').addClass("hide");
+  });
+
+  $(".slider-ho-2").mouseover(function(){
+      $('.slider-img-2').addClass("hide");
+      $('.header-slider-2').addClass('clr-white');
+      $('.slider-p-2').removeClass("hide");
+  });
+
+  $(".slider-ho-2").mouseleave(function(){
+      $('.slider-img-2').removeClass("hide");
+      $('.header-slider-2').removeClass('clr-white');
+      $('.slider-p-2').addClass("hide");
+  });
+
+  $(".slider-ho-3").mouseover(function(){
+      $('.slider-img-3').addClass("hide");
+      $('.header-slider-3').addClass('clr-white');
+      $('.slider-p-3').removeClass("hide");
+  });
+
+  $(".slider-ho-3").mouseleave(function(){
+      $('.slider-img-3').removeClass("hide");
+      $('.header-slider-3').removeClass('clr-white');
+      $('.slider-p-3').addClass("hide");
+  });
+
+   $('#contact').submit(function(e){
+    console.log("EEEEEEEEEEEEEE");
+    e.preventDefault();
+    var json = {
+      table: 'portfolio',
+      name: $('#name').val(),
+      email: $('#email').val(),
+      message : $('#message').val()
+    };
+    console.log(json);
+      $.ajax({
+        url: 'https://yp2xmkosa7.execute-api.ap-northeast-1.amazonaws.com/dev/submit',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(json),
+        dataType: 'json',
+        success: function(data) {
+            $('#contact').hide();
+            $('.feedbackSubmit').removeClass("hide");
+        },
+        error: function(xhr, ajaxOptions, thrownError) {
+            //error handling stuff
+        }  
+      });
+    //{table: 'portfolioDb', name: 'Javid', email: 'javidshakira@gmail.com', message: 'aaaaaaa'}
+    return false;
+    
+    }); 
+
+});
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+var greetings = [ "Think more, Design less", 
+"Technology over technique produces emotionless design", 
+"Code never lies, comments sometimes do","Digital design is like painting, except the paint never dries","Make things as simple as possible, but not simpler","Developer Get Hands Dirty With Code"
+];
+setInterval(()=> {
+    var greeting_id = Math.floor(Math.random() * greetings.length);
+    document.getElementById('text').innerHTML = greetings[greeting_id];
+}, 1000)
+
+</script>
+</body>
+</html>
+
